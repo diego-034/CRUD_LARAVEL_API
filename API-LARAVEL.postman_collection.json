@@ -1,0 +1,1284 @@
+{
+	"info": {
+		"_postman_id": "dbb98dc4-39ae-49f4-b3ea-ee2f0a90d80f",
+		"name": "API-LARAVEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Marco",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Tonelli",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1111111",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "aaa-aaa-aaa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Marco",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Marco",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "marco@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "typeId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "diego@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Poseidon",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "BtgMHMl5pQP67LZWIu0ctXT3lxfZc4F4o4rIffqn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/oauth/token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "8ytz0IUpV72OnC1Rlh9BEMzLgFy0xGYFTswjk0WD",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "def50200b8782fa8f85d4a1408a7129c51da2bd88996ab98a3c4ab6b58d380b9506c9da7f94ae569e8f26f3197e69f6cbc7e9df0e08d8e1ef250e88b0d20ed57ae4628574770d0af719bd0b3fd92de10ea41b935bc0d7dacebc9bc3c6ccb3e1837ba06c77d3f1abd62088c86eb56eb1e6c83313af483f96fcbc60486f8e7f586b8ecf05bbbda8fbfb8d213190cdad59e63264dfcfc9d07c01c73d10d27ade1e671af10cc4d673f6ab5e2fb9b2f65ec309668364e34363a7dc4a2949d73080460b3c5437be092f2ca17419e32d4da6a82b42c280815fd35d3a78a96dda1fb6a8e18252d25dbee329740245d793911d9e23119658ed3a0e08289880f0b4d92df1134a61a99070f9884ddbac81daa468fb527eece7070d452f3182a47d18cb4bc64fe0447f00061b400fce8ee492e108f57b3afcc22eff5d205bc3797bc756f56dd1914199cf0b8779bb2f60eb04f8c2d3754796345460ebe856e3a86fe254431652d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/oauth/token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "alejandro",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Miranda",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "4720012",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bloque 5 apto 402",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "alejandro",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Miranda",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "4720012",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bloque 5 apto 402",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Laptop ACER azul 15''",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "75",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "2500000",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "IVA",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Portatil ACER Aspire 3 15'' 2019 azul",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "2500000",
+									"type": "text"
+								},
+								{
+									"key": "IVA",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/categorys",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"categorys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "Electrodomésticos",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/categorys",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"categorys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzRjYTc4YmJkOGI4YmNiOTM5NzkxN2MyZGI1NTUyMGU4NzY4MjQ5YTVkZGM0YzA2MWM2ZjVkYjE4NmRhNTA2ZTNjZGE1YWI1MjA3OGI3NWIiLCJpYXQiOjE1ODgxODczMzEsIm5iZiI6MTU4ODE4NzMzMSwiZXhwIjoxNTg4MjA1MzMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.c2cfi5-4RLBSnHHP81opfajNONrXmvlpcgMJgLeqDAw2pFC9bk0Ds3_e06dduL6ByK0GGOPrZIudcmiw1a5AoeD5Hp16zUzRcwPXDGZPC8mpI7enuKLKZZdM_DAbsfHoxdyfSM9NvQUiJWdUO6CqD7ebdatxF6hs4hts-FA-30iJOQBpOjQmnYx0CZw-6NGccIbbOz_vKFHKkGoqex1geWZNHHOX0F8UdvA009WvsgCh16ti9jSUsfU0ImZKaK1Ek0OZiQuebH7cPzau7TU3y3xD7bqZt7gCwjE-HYEb4GlOax_inllZSt_HYbtizmLZ8YkRv9ob94tk_HVDAnIyLEWJ1-cwHU1Nn2m6RLc_3e8IMdGtK6xMrMMbhuzrgQRBg2QJ_2lyueVPDefIje3JEg82zAyv4JIqorP_shbFoZx4eXygcPDCQvTmeQkae6ORNQRyoY7vVSFTOrRGbgYKWsX9CgRysCNxtYgasfNcSk8LIy8qcthfguNuZFFrui_EhAxzIJTG0uO1-CSA3CKMPr_NLkZX69FIS6ZxaurDZncKRJce9tDHQ03qqbtK4aNd2mvxeFsgVj_Q4o_bEvXBSWJeMzEhQinNhrEdE_AoD8khpwLPel_ByOPNUsslkwWVqB1reQfd5Y3RQAcmkLipPCCkA_oMCAzoEJneZyfccJM"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category",
+									"value": "Tecnología",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/categorys/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"categorys",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/categorys/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"categorys",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "UserType",
+			"item": [
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/userstypes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"userstypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "Cliente",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/userstypes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"userstypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWVmY2I5MjZkYzFmNzU5NmU2ZjBmYWZiOTNlYTdkNzRjYjcwOTk2N2JmYjllYmE3MDY5Y2Q5Nzc3N2ZjMTllMjNhNDI0NjFiNTI5ZTZlZWMiLCJpYXQiOjE1ODgxOTc3MDMsIm5iZiI6MTU4ODE5NzcwMywiZXhwIjoxNTg4MjE1NzAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.MVCFffC3nkj1AKeeQSggaSjj3QaI3LZ2cOKqkoIKY0f-kYkNM2aZgHlMqTTz-5s3Oie0sE9bJV01tvT6PFw_PLKS73kJPfy7DvWdO1KI2oSVG7IElhH3zHaeU0x4A7bR5XUWCnN_tisgtg7KE8W50YWvjFFTsXqyQwO2Qxgu8UQ1XRlnBBMTUsFtjhYCuAghezmjDS_6Zq3wzAgoRhMYdhZtItG4mf5jImr94NhJtuDmoNYGWAEFfGlGrUMKooKGYrmRdsqZIe9YKRhigv0PwtHm81jE2-Nlk-jfNlo2uUI2KYS_YL5_hRR-HUhaZrPWwG0hD_JzeOHjm6jlAypd34EnV2iEuOsWtIsYOyKoNT2EYdscTAbgUZD7NHMo78Ov87RsaXS_hBJrPwnk-OUpetq0uzswlhhEbjC7AxO2bOWRdjx2cMMmoJV8I-NueYMuRw_6DP_6dvztRYkCYVegZeWuXi9aRHOz63rGHWzGRu18zvXK3Trt3HQ5errr0UILyfW7xfG--fAdiGzKSZB2Fv2WMpX5XbxUg1sfZGBlMZw_SwlEhMcpWsoib0rC7VTP3UZC9SHCPBjshwz5R0h90xheweo-oYcd2v0sVkDypRWoihavHj_5CZucF0cqGq0H4haZEJ_ajQ2iz_TG1pu2FZXGxtWmAGROMnna4nD_g-0"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "cliente",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/userstypes/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"userstypes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/userstypes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"userstypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYzE4NDNmZjYyZWJkNWU3N2FlYzYwMDcxMzMyMWM2NmU0MjI1NTMwOGIyNzMyNDM2ZDExZTY1NzgzZTMxZTYxY2I4NzU3ZTUxNTYxZTNiY2YiLCJpYXQiOjE1ODgwNzc0NDksIm5iZiI6MTU4ODA3NzQ0OSwiZXhwIjoxNTg4MDk1NDQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.qmLU_F7HOF7AXkI0yqEKy4vgoG71tQjzcFWx0h28sgk7TUY2B9vjQ_8bgBkzuCN1tCnoeQyC_kdpOGNeBidJqFk-H7TnlvzkWtzvjCknuKS-odFhbI59_dvvjx6v_6VyWjh7KrVff9vN7FjIkX0cUpvoSXBt4Eg42kKGAdsZ6RyfInYSdXWZGFyYNjnYToGIxDmiOgJWuWM6VrFkCr1PT0HPMjgApnOmknb2oZT2tStkEiCjPFxY0O7U8ZadSzs9Wa9hT6fdwd9vAwogrmbUnVazPrmr5PaJzcGIlLXM-yqSU87bNjxNQEopXRhZ7V7oss9-ThCzwLd2DGkGyiLUci70WYVi8Ux876BtY28Tw9nQ3NsTqdxH0W-5qSkbtN5FRyD-wUIvUkQO4fV8GLikiWO2QU21n7dhUZPobghClzDL5FTUtqwMJhSQd6q9OlTyeqjzQraogZa1aZ_aj4w4I8DY3zku1oUpbIfCujGcYp-vadyYk8HAwghi8iVtvUAwRXCXm26XgBbUIgW5H14EtxUvJpXnrPa5e34buE29LBEZgQKpTL8XKr9IislaX4dKJsbCFQyTDCMCboWKUpNT_Y0CCHWmtHNvWirW8XYLtqrWUs0px1wtcAzQjvebBMbY9oigluDgFR_8iU06Kf4J9W1fEMsUv8jhT6HWclwkI5o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoices",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNTFjOGU4OWU1OWY0MzQzYWE0NjM2ZmU1N2U1MDEwMjIwZGM0NzAwZThiMGJhYzIxYjBiNWY4NThmNGNiYTRmZDRiNmU3Y2MyZmEzOTk2MjgiLCJpYXQiOjE1ODgwOTU1ODIsIm5iZiI6MTU4ODA5NTU4MiwiZXhwIjoxNTg4MTEzNTgyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dB5GD1RgOJOqat-2D-mTVMgqvVhagFTndl3PkJYNxJXzgrMG2QUS4XeHlH8ocGnQKTPNWe69nb5Phq7pPz2kernRkNnnuNbdc3uQsRu3QuFbCXOHFvB1Y2UQKvIvFaArpH_v3WxCWZC7poX92UHs1ITd10aASNjL_FUjlgfvmgiKas8D2XmlPnwMtgrXEt-K0qV-TdpMVapl7j2xw7J8NHypjp0k571gcq0ZQ4pWXsA6i2gvthjj8MTvN-40u9hy87ztotMZeLfvdzkW8K7sv-7GnodugJC41Wg32sNjAtHHkEXk1bF3ZHhw-d7ZCGBGUvZ1PwDqQ7oea-X2UXgpEPVbU0ZTd4bJQLF8GpsPxHTPFd7_HDFmlaYQ8zRomzb8QcYmeNZ2AoAylKwK7OWgjl5mBbJ9U0mBv3YM1yiG8mb5p7r_3cGap2QzgCxeJFZR_aS1ZZyC6eGV-JFUkmtzOwuH30wUgPABxPfurDlMz50dDvb-uTygMjdhqgfZ7o72rqzunxerEFCyMRT4XEGeybe6x8HZPYSS8Nruu1wkqbN6epvByXplVJ8LExSAdRajITXleQPqSQneC5ByjO4LF2EhExl7ww5onhOIPV8LRZId0qLQTVEGN2FkbsdXXmx-K_8is7Kgf35Hr8OT8oU3L1LbYueP5dYA4DTTAF1mf38"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "total",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "stateInvoice",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoices",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzRjYTc4YmJkOGI4YmNiOTM5NzkxN2MyZGI1NTUyMGU4NzY4MjQ5YTVkZGM0YzA2MWM2ZjVkYjE4NmRhNTA2ZTNjZGE1YWI1MjA3OGI3NWIiLCJpYXQiOjE1ODgxODczMzEsIm5iZiI6MTU4ODE4NzMzMSwiZXhwIjoxNTg4MjA1MzMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.c2cfi5-4RLBSnHHP81opfajNONrXmvlpcgMJgLeqDAw2pFC9bk0Ds3_e06dduL6ByK0GGOPrZIudcmiw1a5AoeD5Hp16zUzRcwPXDGZPC8mpI7enuKLKZZdM_DAbsfHoxdyfSM9NvQUiJWdUO6CqD7ebdatxF6hs4hts-FA-30iJOQBpOjQmnYx0CZw-6NGccIbbOz_vKFHKkGoqex1geWZNHHOX0F8UdvA009WvsgCh16ti9jSUsfU0ImZKaK1Ek0OZiQuebH7cPzau7TU3y3xD7bqZt7gCwjE-HYEb4GlOax_inllZSt_HYbtizmLZ8YkRv9ob94tk_HVDAnIyLEWJ1-cwHU1Nn2m6RLc_3e8IMdGtK6xMrMMbhuzrgQRBg2QJ_2lyueVPDefIje3JEg82zAyv4JIqorP_shbFoZx4eXygcPDCQvTmeQkae6ORNQRyoY7vVSFTOrRGbgYKWsX9CgRysCNxtYgasfNcSk8LIy8qcthfguNuZFFrui_EhAxzIJTG0uO1-CSA3CKMPr_NLkZX69FIS6ZxaurDZncKRJce9tDHQ03qqbtK4aNd2mvxeFsgVj_Q4o_bEvXBSWJeMzEhQinNhrEdE_AoD8khpwLPel_ByOPNUsslkwWVqB1reQfd5Y3RQAcmkLipPCCkA_oMCAzoEJneZyfccJM"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "total",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "stateInvoice",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoices/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoices/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoices",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "InvoiceDetails",
+			"item": [
+				{
+					"name": "Consult",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMmQxYWI3MWU3YjRlN2U4MzY5ZGMyOGI5NWE1NjNjMDU4OGZjNjA0Y2VkMGU2NTkyMjEyNDY4MjA2MGFjYmU5YTcwYTg2N2ExMmQwNTY3ZjAiLCJpYXQiOjE1ODgwOTcxMTgsIm5iZiI6MTU4ODA5NzExOCwiZXhwIjoxNTg4MTE1MTE4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jEbdiTF_4tVh_aMBaeSK1YjG7xdpSDvcUg-jyMTxFX88w23Td6fxqo_81-fvvdTtnBSSbOjel2vwBCMd5yFMvvCVRdk0nVQ9T21cAtThi-Wd9Ih7GmfPtRsuaf2ZcGSW0K1WZttQomBqxa4-TkOHhchL0QZsZOfYQESSwr-YKNUlLn8uZQOcOIJQdRApCUuwPHMkZtFCQs3fOYKo-5bIUTNxQ5_71BziXuDwx6gKC1klJGmESpYUey6UwxjRQBFAFQRVgpCHlJmFBe6ROPjNQUEOws_oJ6GoSVEe3F9SSmwic313S8saRcrgmsvsM2GJiSvzRi_Rs6L2dZxhM5g5e6nfSlSOtdvac4UODo90mOeGPRH1t6AXytykwmaUR7mrk2Iw4p1XYkByKtrzZMAWkPgaIC3fbHhe0rdF1hkjcC3NrLQQQZ1erSV-2sHt_ngzO4_RfH9XhARI3Zxv0V_SQz3O_N5QjPVKSx2DFs2RcV5oNXkhnaso2mo8AVrvXCE0i0_AVs3ABv6Isc1PQg-eXRyKuSLKHRo8708vdERgCQjxYSJAyOBdvjMBW_28WjKSVs4kcyqc0Qn0u3tFJF2entqCq59jFpnYVyO31OKDIrE6i11VckbXtgc1L5Vm-lk9FU2PukSROuHVZAeh7AfKyOmWr4VeFkiB7fHcYBfCi04",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoicedetails",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoicedetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNTFjOGU4OWU1OWY0MzQzYWE0NjM2ZmU1N2U1MDEwMjIwZGM0NzAwZThiMGJhYzIxYjBiNWY4NThmNGNiYTRmZDRiNmU3Y2MyZmEzOTk2MjgiLCJpYXQiOjE1ODgwOTU1ODIsIm5iZiI6MTU4ODA5NTU4MiwiZXhwIjoxNTg4MTEzNTgyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dB5GD1RgOJOqat-2D-mTVMgqvVhagFTndl3PkJYNxJXzgrMG2QUS4XeHlH8ocGnQKTPNWe69nb5Phq7pPz2kernRkNnnuNbdc3uQsRu3QuFbCXOHFvB1Y2UQKvIvFaArpH_v3WxCWZC7poX92UHs1ITd10aASNjL_FUjlgfvmgiKas8D2XmlPnwMtgrXEt-K0qV-TdpMVapl7j2xw7J8NHypjp0k571gcq0ZQ4pWXsA6i2gvthjj8MTvN-40u9hy87ztotMZeLfvdzkW8K7sv-7GnodugJC41Wg32sNjAtHHkEXk1bF3ZHhw-d7ZCGBGUvZ1PwDqQ7oea-X2UXgpEPVbU0ZTd4bJQLF8GpsPxHTPFd7_HDFmlaYQ8zRomzb8QcYmeNZ2AoAylKwK7OWgjl5mBbJ9U0mBv3YM1yiG8mb5p7r_3cGap2QzgCxeJFZR_aS1ZZyC6eGV-JFUkmtzOwuH30wUgPABxPfurDlMz50dDvb-uTygMjdhqgfZ7o72rqzunxerEFCyMRT4XEGeybe6x8HZPYSS8Nruu1wkqbN6epvByXplVJ8LExSAdRajITXleQPqSQneC5ByjO4LF2EhExl7ww5onhOIPV8LRZId0qLQTVEGN2FkbsdXXmx-K_8is7Kgf35Hr8OT8oU3L1LbYueP5dYA4DTTAF1mf38"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "invoiceId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "5000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoicedetails",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoicedetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzRjYTc4YmJkOGI4YmNiOTM5NzkxN2MyZGI1NTUyMGU4NzY4MjQ5YTVkZGM0YzA2MWM2ZjVkYjE4NmRhNTA2ZTNjZGE1YWI1MjA3OGI3NWIiLCJpYXQiOjE1ODgxODczMzEsIm5iZiI6MTU4ODE4NzMzMSwiZXhwIjoxNTg4MjA1MzMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.c2cfi5-4RLBSnHHP81opfajNONrXmvlpcgMJgLeqDAw2pFC9bk0Ds3_e06dduL6ByK0GGOPrZIudcmiw1a5AoeD5Hp16zUzRcwPXDGZPC8mpI7enuKLKZZdM_DAbsfHoxdyfSM9NvQUiJWdUO6CqD7ebdatxF6hs4hts-FA-30iJOQBpOjQmnYx0CZw-6NGccIbbOz_vKFHKkGoqex1geWZNHHOX0F8UdvA009WvsgCh16ti9jSUsfU0ImZKaK1Ek0OZiQuebH7cPzau7TU3y3xD7bqZt7gCwjE-HYEb4GlOax_inllZSt_HYbtizmLZ8YkRv9ob94tk_HVDAnIyLEWJ1-cwHU1Nn2m6RLc_3e8IMdGtK6xMrMMbhuzrgQRBg2QJ_2lyueVPDefIje3JEg82zAyv4JIqorP_shbFoZx4eXygcPDCQvTmeQkae6ORNQRyoY7vVSFTOrRGbgYKWsX9CgRysCNxtYgasfNcSk8LIy8qcthfguNuZFFrui_EhAxzIJTG0uO1-CSA3CKMPr_NLkZX69FIS6ZxaurDZncKRJce9tDHQ03qqbtK4aNd2mvxeFsgVj_Q4o_bEvXBSWJeMzEhQinNhrEdE_AoD8khpwLPel_ByOPNUsslkwWVqB1reQfd5Y3RQAcmkLipPCCkA_oMCAzoEJneZyfccJM"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "550550",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoicedetails/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoicedetails",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMzYwODIxNGEwNTVmNGFhYTBkYTQ5OTA4OGM5MzFkOGNkNzJjMDlhOTg1ZTIwMzdhYTI2YWNlYzI0ZDhhMTkwNTk0OWZjZjgxZjY3ZWVkYjYiLCJpYXQiOjE1ODgxODQxNTAsIm5iZiI6MTU4ODE4NDE1MCwiZXhwIjoxNTg4MjAyMTUwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.FJ8pW14nMUiuBK3jk_5EBl7jIEg6Z0ztLwFTg6QVcrgvpJbJbFnKXEM0Q651MPPZWqoulv4ZLNHYxA39Mg99GlhfW_IqKuFu2esnacIC7Rq-e9jVRxajb7EzSYvZVZkvT7bpdNTsJmEAPr1txWRIfdn2dSFNlD8N8SoOE5Cxs_bZZNN0Pc4_0klRv58E5oMDNKnF8dgjdpGyDLnRwEiSeE3tGex5FAEr85ucsAPxHW34BMALjANjHteANSK2tSWTSeCuSbcjlKZs-A7cVBuhuzbulwnStVih-pjhSF8eXGpMnECW71JybaXjcsTp8uNaPza2Zxu4Lb9zI2Wi5vYdDCMOE3NqQTnX1GHquyBVUlFmTKFU9XD7auFZSM2FrCaCAS46IUViVTZgNHo10wdmamwgzhCgDieqWKGqh0d3_F4Ge_qGQmWJulzCuudHkjqfQb4wrbsQJjwNCRygi8NViHXT1C73xC0Zhk4uiWanhiizPIyWYUiJSftMchQ0bw0ms4SyMwKg6kBjlJEvSCHZUfG5NMB9Pt7PuawnaTEzO2tKnANxyL-Q2HgIFajy4bW6kWSG4HRo5gcb7IeWMfqWSUbuQFL0D9n_hIbSqGH8pPkt4WNkK5wIlsXoyoKo_v5vbwR_dEMpCXXsXg0W6G8RJNtGY_Qm_eCYjBLM_eKfCaU"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/invoicedetails/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"invoicedetails",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
